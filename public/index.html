@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link id="theme" rel="stylesheet" type="text/css" href="style/default.css">
     <meta charset="UTF-8">
-    <title>RealInv - Home</title>
+    <title> - Home</title>
 </head>
 <body>
-
+<div id="sideMenu">
+    <p class="sideMenuItem">Men</p>
+    <p class="sideMenuItem">Women</p>
+    <p class="sideMenuItem">Accessories</p>
+    <p class="sideMenuItem">Lookbook</p>
+    <div class="bottom">
+        <p id="h_li_text" class="sideMenuItem" onclick="h_li_click()">Login</p>
+        <p class="sideMenuItem">Terms/Privacy</p>
+        <p class="sideMenuItem">Help</p>
+    </div>
+</div>
 </body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/s/h_main.js"></script>
 </html>

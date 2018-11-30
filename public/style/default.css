@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'vcr_osd_monoregular';
+    src: url('f/vcr_osd_mono_1.001-webfont.woff2') format('woff2'),
+    url('f/vcr_osd_mono_1.001-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'vcr_osd_monoregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #ababab;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+#sideMenu {
+    position: absolute;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    border-right: 1px solid;
+}
+.sideMenuItem {
+    margin-bottom: 2%;
+    padding-left: 10%;
+    cursor: pointer;
+}
+.sideMenuItem:hover {
+    border-bottom: 1px dashed;
+    border-top: 1px dashed;
+}
+.bottom {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+.singlePanel {
+    border: 1px solid;
+    width: inherit;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.panelTitle {
+    font-size: 24px;
+    text-align: center;
+}
+button {
+    color: black;
+    font-family: 'vcr_osd_monoregular', Arial, sans-serif;
+    background-color: white;
+    border: 1px dashed;
+    padding: 2%;
+    margin: 2%;
+
+    -webkit-transition: background-color 2s, color 2s;
+    -moz-transition: background-color 2s, color 2s;
+    -ms-transition: background-color 2s, color 2s;
+    -o-transition: background-color 2s, color 2s;
+    transition: background-color 2s, color 2s;
+}
+button:hover {
+    color: black;
+    background-color: lightgray;
+
+    -webkit-transition: background-color 2s, color 2s;
+    -moz-transition: background-color 2s, color 2s;
+    -ms-transition: background-color 2s, color 2s;
+    -o-transition: background-color 2s, color 2s;
+    transition: background-color 2s, color 2s;
+}
+button:focus {
+    outline: none;
+}
+input[type=text], [type=email], [type=password] {
+    border: 1px solid gray;
+    font-family: 'vcr_osd_monoregular', Arial, sans-serif;
+    padding: 5px;
+}
+input:focus {
+    outline: none;
+}

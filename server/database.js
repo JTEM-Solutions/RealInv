@@ -20,7 +20,8 @@ if (!fs.existsSync('config.json')) {
             'storeEnabled':true,
             'superuser':"YourUsername",
             'siteName':"TrueInv",
-            'siteTheme':'default'
+            'siteTheme':'default',
+            'siteURL':'localhost'
         }
     });
     fs.writeFileSync('config.json', def, 'utf8', function(err) {
@@ -42,7 +43,7 @@ const con = mysql.createConnection({
     database: config.db.database
 });
 
-var init = function() {
+var init = function(callback) {
     con.connect(function(err){
         if(err){
             console.log('ERROR> Could not connect to database. Check the credentials in config.json');
@@ -69,4 +70,10 @@ var init = function() {
     });
 };
 
+var heartbeat = function() {
+    var final = con.query("SELECT username FROM Accounts WHERE password='m';", function (err, rows) {
+    });
+};
+
 module.exports.init = init;
+module.exports.heartbeat = heartbeat;
