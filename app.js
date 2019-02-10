@@ -97,6 +97,10 @@ io.sockets.on('connection', function(socket) {
             socket.emit('s_check_r', {status:false});
     });
     socket.on('register', function(data) {
+
+    });
+    socket.on('login', function(data) {
+
     });
 });
 

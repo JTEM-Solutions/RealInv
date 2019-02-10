@@ -53,6 +53,14 @@ body {
     font-size: 24px;
     text-align: center;
 }
+.checkBox {
+    width: 25px;
+    height: 25px;
+    border: 1px solid gray;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+}
 button {
     color: black;
     font-family: 'vcr_osd_monoregular', Arial, sans-serif;

@@ -20,15 +20,17 @@
     </div>
     <div id="re_panel" class="singlePanel" style="display: none;">
         <p class="panelTitle">Register</p>
-        <p>Username</p>
-        <input id="re_uName" type="text"><br>
+        <p>First Name</p>
+        <input id="re_fName" type="text"><br>
+        <p>Last Name</p>
+        <input id="re_lName" type="text"><br>
         <p>Email</p>
         <input id="re_uEmail" type="email"><br>
         <p>Password</p>
         <input id="re_uPassword" type="password"><br>
         <p id="re_errorText" style="display: none; color: red;"></p>
-        <div class="checkBox" id="re_checkbox"></div><p>I agree to the TOS</p>
-        <button id="re_submitButton" onclick="li_submit()" style="margin-top: 7%; width: 40%;">Login</button>
+        <div class="checkBox" id="re_checkbox" onclick="re_checkbox_click()" style="margin-top: 5%; margin-right: 2%;"></div><p style="display: inline-block;">I agree to the TOS</p>
+        <button id="re_submitButton" onclick="re_submit()" style="margin-top: 7%; width: 40%;">Register</button>
     </div>
 </body>
 </html>
