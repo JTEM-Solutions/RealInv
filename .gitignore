@@ -1,0 +1,11 @@
+# Ignore .idea folder
+.idea
+
+# Ignore all .iml files
+*.iml
+
+# Ignore .pem files
+*.pem
+
+# Ignore SASS config files
+.sass-cache
