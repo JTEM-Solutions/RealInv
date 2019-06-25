@@ -3,6 +3,7 @@
 
 # Ignore all .iml files
 *.iml
+*.pem
 
 # Ignore .pem files
 *.pem
